@@ -2,6 +2,14 @@ from bs4 import BeautifulSoup
 from tkinter import *
 from tkinter.font import Font
 import requests
+import datetime
+
+#finding the date and time of that instance
+date_time=datetime.datetime.today()
+date_time = date_time.replace(microsecond=0)
+date = date_time.date()
+time=date_time.time()
+
 turn=0
 #setting the window for the gui app
 window=Tk()
@@ -49,8 +57,8 @@ for info in allinfos:
 print("Bangladesh Total Cases: "+bd_total_cases+ "\n"+ "Bangladesh New Cases: "+bd_new_cases+"\n"+"Bangladesh Total Deaths: "+bd_total_deaths+"\n"+"Bangladesh Total Recovered: "+bd_recovered)
 
 #setting the font for the gui app text
-my_font = Font(family="Antique Olive", size=16)
-
+my_font = Font(family="Antique Olive", size=14)
+time_font=Font(family="Antique Olive", size=8)
 #inserting all the text in the gui app
 title_label=Label(window,text="Covid 19 Update",bg="#355664",fg="white",font=my_font).pack()
 world_total_cases_label=Label(window,text="World Total Cases: "+ totalcases,fg="white",bg="#355664",font=my_font).pack()
@@ -60,6 +68,7 @@ bd_total_cases_label=Label(window,text="Bangladesh Total Cases: " + bd_total_cas
 bd_new_cases_label=Label(window,text="Bangladesh New Cases: " + bd_new_cases,fg="white",bg="#355664",font=my_font).pack()
 bd_total_deaths_label=Label(window,text="Bangladesh Total Deaths: " + bd_total_deaths,fg="white",bg="#355664",font=my_font).pack()
 bd_total_recovered_label=Label(window,text="Bangladesh Total Recovered: " + bd_recovered,fg="white",bg="#355664",font=my_font).pack()
-
+imp_text=Label(window,text="Stay Home, Stay Safe \n Everything Will Be Alright",fg="white",bg="#355664",font=my_font).pack()
+datetime=Label(window,text=str(date) +  "\n" + str(time),fg="white",bg="#355664",font=time_font).pack()
 window.mainloop()
 			
