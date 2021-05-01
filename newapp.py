@@ -50,11 +50,11 @@ for info in allinfos:
 				bd_new_cases=sub_infos[2].text
 			else:
 				bd_new_cases="0"
-			bd_total_deaths=sub_infos[3].text
-			bd_recovered=sub_infos[5].text
+			bd_total_deaths=sub_infos[4].text
+			bd_recovered=sub_infos[6].text
 			turn=1
 		
-print("Bangladesh Total Cases: "+bd_total_cases+ "\n"+ "Bangladesh New Cases: "+bd_new_cases+"\n"+"Bangladesh Total Deaths: "+bd_total_deaths+"\n"+"Bangladesh Total Recovered: "+bd_recovered)
+print("Bangladesh Total Cases: "+bd_total_cases+ "\n"+ "Bangladesh Total Cases: "+bd_new_cases+"\n"+"Bangladesh Total Deaths: "+bd_total_deaths+"\n"+"Bangladesh Total Recovered: "+bd_recovered)
 
 #setting the font for the gui app text
 my_font = Font(family="Antique Olive", size=14)
