@@ -6,7 +6,7 @@
 ## Introduction
 Coronavirus update app which has a graphical interface. It shows current coronavirus-affected stats for the world and detail stats for Bangladesh.
 
-<img src="assets/appimage.png" height="400px">
+<img src="assets/appimage.PNG" height="400px">
 ## Get code
 ```bash
 git clone https://github.com/Tanmoy-Sarkar/Latest_Coronavirus_Update.git
