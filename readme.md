@@ -25,12 +25,10 @@ pip install requests beautifulsoup4
 
 ## How To Run
 
-Run from the command line
+Go to the code directory. Run from the command line
 ```bash
-python newapp.py
+python app.py
 ```
-
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
