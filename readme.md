@@ -8,6 +8,7 @@ Coronavirus update app which has a graphical interface. It shows current coronav
 
 <img src="assets/appimage.PNG" height="400px">
 ## Get code
+
 ```bash
 git clone https://github.com/Tanmoy-Sarkar/Latest_Coronavirus_Update.git
 ```
